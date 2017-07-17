@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>default</title>
+</head>
+<body>
+<script>
+    function animal(type){
+        type = type || 'cat';
+        console.log(type)
+    }
+    animal();
+
+    //es6 写法
+    function animal(type = 'cat'){
+        console.log(type)
+    }
+    animal();
+</script>
+</body>
+</html>
