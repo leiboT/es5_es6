@@ -2,26 +2,26 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title></title>
+  <title>create</title>
 </head>
 <body>
 <script>
-  var father={
-    bal:10000000000,
-    car:"infiniti"
+  var father = {
+    bal : 10000000000,
+    car : "infiniti"
   };
-  var hmm=Object.create(father,{
-    phone:{
-      value:"IPhone 8 Plus",
-      writable:true,
-      enumerable:true,
-      configurable:true
+  var hmm = Object.create(father, {
+    phone : {
+      value : "IPhone 8 Plus",
+      writable : true,
+      enumerable : true,
+      configurable : true
     },
-    bao:{
-      value:"LV",
-      writable:true,
-      enumerable:true,
-      configurable:true
+    bao : {
+      value : "LV",
+      writable : true,
+      enumerable : true,
+      configurable : true
     }
   });
   console.dir(hmm);
