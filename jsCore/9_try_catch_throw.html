@@ -2,24 +2,24 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title></title>
+  <title>throw</title>
 </head>
 <body>
 <script>
   //创建函数
-  function round(num,d){
-    if(!isNaN(num)&&!isNaN(d)){
-      num*=Math.pow(10,d);
-      num=Math.round(num);
-      return num/Math.pow(10,d);
+  function round(num, d){
+    if(!isNaN(num) && !isNaN(d)){
+      num *= Math.pow(10, d);
+      num = Math.round(num);
+      return num/Math.pow(10, d);
     }else
       throw new Error(
         "必须传入数字！");
   }
 
-  //调用
-  var num=parseFloat(prompt("输入数字"));
-  var d=parseInt(prompt("输入小数位数"));
+  // 调用
+  var num = parseFloat(prompt("输入数字"));
+  var d = parseInt(prompt("输入小数位数"));
   try{
   //if(!isNaN(num)&&!isNaN(d))
     console.log(round(num,d));
