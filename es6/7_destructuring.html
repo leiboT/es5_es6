@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Destructuring-解构</title>
+    <title>Destructuring-解构赋值</title>
 </head>
 <body>
 <script>
@@ -12,14 +12,14 @@
 //    console.log(zoo);  //Object {cat: "ken", dog: "lili"}
 
     //es6 写法
-    let cat = 'ken';
-    let dog = 'lili';
-    let zoo = {cat,dog};
-    console.log(zoo);  //Object {cat: "ken", dog: "lili"}
+//    let cat = 'ken';
+//    let dog = 'lili';
+//    let zoo = {cat, dog};
+//    console.log(zoo);  //Object {cat: "ken", dog: "lili"}
 
-//    let dog = {type: 'animal', many: 2};
-//    let { type, many} = dog;
-//    console.log(type, many);   //animal 2
+    let dog = {type: 'animal', many: 2, age: 124};
+    let { type, many , age} = dog;
+    console.log(type, many, age);   //animal 2
 </script>
 </body>
 </html>
