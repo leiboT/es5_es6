@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title></title>
+  <title>closure</title>
 </head>
 <body>
 <script>
@@ -12,18 +12,18 @@
 //    console.log(i++);
 //  }
   function outer(){
-    var i=1;//受保护
-    return function(){
+    var i = 1;// 受保护
+    return function (){
       console.log(i++);
     }
   }
-  var getNum=outer();
+  var getNum = outer();
   //getNum:function(){console.log(i++);}
 
   //需求:
   getNum();//1
   getNum();//2
-  i=1;
+  i = 1; // 外部作用域无法访问和更改内部作用域
   getNum();//3
   getNum();//4
 </script>

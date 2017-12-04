@@ -7,21 +7,21 @@
 <body>
 <script>
   //nAdd
-  function fun(){//外层函数
-    var n=999;//受保护
+  function fun(){// 外层函数
+    var n = 999;// 受保护
     //外层函数向外抛出内层函数2种:
     //2. 直接给全局变量赋值
-    nAdd=function(){n++};//内层函数1
+    nAdd = function (){n++};// 内层函数1
     //1. return
-    return function(){//内层函数2
+    return function (){//内层函数2
       console.log(n);
     }
   }//同一次外层函数调用，返回的多个内层函数共用同一个受保护的变量
-  var get=fun();
+  var get = fun();
   //get:function(){console.log(n);}
-  get();//999
+  get();// 999
   nAdd();
-  get();//1000
+  get();// 1000
 
 //  function fun(){
 //    for(var i=0,arr=[];i<3;i++){
