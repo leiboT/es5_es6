@@ -2,16 +2,17 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title></title>
+  <title>override</title>
 </head>
 <body>
 <script>
-  var arr=[1,2,3];
-  var now=new Date();
-  var reg=/^\d{6}$/;
-  var obj={
-    sname:"lucy",sage:11,
-    toString(){
+  var arr = [1, 2, 3];
+  var now = new Date();
+  var reg = /^\d{6}$/;
+  var obj = {
+    sname : "lucy",
+    sage : 11,
+    toString: function (){
       return "{sname:"+this.sname+",sage:"+this.sage+"}";
     }
   };
